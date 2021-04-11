@@ -17,7 +17,18 @@ function Home() {
               src={tweet.avatarUrl}
               alt=""
             />
+            <div className="flex flex-col">
+              <p> 
+                <span className="font-bold">{tweet.name}</span>
+                <span className="text-gray-500">@{tweet.username}</span>
+                <span className="px-1 text-cool-gray-500">-</span>
+                <span className="text-cool-gray-500">18m</span>
+              </p>
             <p className="text-sm">{tweet.text}</p>
+            <div>
+
+            </div>
+            </div>
           </div>
         </div>
       ))}
