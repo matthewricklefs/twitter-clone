@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
           className="rounded-full w-7 h-7"
           src="http://twivatar.glitch.me/samselikoff"
         />
-        <p className="ml-6 text-lg font-extrabold">Latest Tweets</p>
+        <p className="ml-6 text-lg font-extrabold">{Component.headerTitle}</p>
       </header>
 
       <main className="flex-1">

@@ -6,4 +6,6 @@ function Messages() {
   );
 }
 
+Messages.headerTitle = "Messages"
+
 export default Messages;

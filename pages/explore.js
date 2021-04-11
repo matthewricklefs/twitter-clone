@@ -1,9 +1,7 @@
 function Explore() {
-  return (
-    <div>
-      <h1>explore</h1>
-    </div>
-  );
+  return <p>explore</p>;
 }
+
+Explore.headerTitle = "Search";
 
 export default Explore;

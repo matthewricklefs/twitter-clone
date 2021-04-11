@@ -1,12 +1,7 @@
-import Head from "next/head";
-
-export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-    </div>
-  );
+function Home() {
+  return <p>Hello!</p>;
 }
+
+Home.headerTitle = "Latest Tweets";
+
+export default Home;
