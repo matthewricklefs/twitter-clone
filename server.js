@@ -44,20 +44,21 @@ let server = createServer({
 
   routes() {
     this.namespace = "api";
-    this.getComputedStyle("tweets");
+    this.get("tweets");
 
     this.passthrough();
   },
 
   seeds(server) {
-    server.create("tweet", "fromMatt", { text: "just setting up my twttr" });
-    server.create("tweet", "fromMatt", { text: "Hi" });
-    server.create("tweet", "fromMatt", {
-      text: "I still don't understand useEffect",
-    });
+    // server.create("tweet", "fromMatt", { text: "just setting up my twttr" });
+    // server.create("tweet", "fromMatt", { text: "Hi" });
+    // server.create("tweet", "fromMatt", {
+    //   text: "I still don't understand useEffect",
+    // });
+    server.createList("tweet", 50);
   },
 });
 
 // setInterval(() => {
-//   server.create("tweet")
-// }, 5000)
+//   server.create("tweet");
+// }, 5000);

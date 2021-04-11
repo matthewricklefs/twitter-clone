@@ -1,5 +1,6 @@
 import "tailwindcss/tailwind.css";
 import { Link } from "../components/Link";
+import "../server";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,7 +13,7 @@ function MyApp({ Component, pageProps }) {
         <p className="ml-6 text-lg font-extrabold">{Component.headerTitle}</p>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 overflow-scroll">
         <Component {...pageProps} />
       </main>
 
