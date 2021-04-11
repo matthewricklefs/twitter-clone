@@ -18,49 +18,52 @@ function MyApp({ Component, pageProps }) {
 
       <footer className="flex border-t border-gray-200">
         <Link href="/" className="flex items-center justify-center w-1/4 py-3">
-          {({ isActive }) => (
-            <HomeIcon
-              className={`p-px w-7 h-7 ${
-                isActive ? "text-blue-500" : "text-gray-500"
-              }`}
-            />
-          )}
+          {({ isActive }) =>
+            isActive ? (
+              <HomeIcon className="p-px w-7 h-7 text-blue-500" />
+            ) : (
+              <HomeIconEmpty className="p-px w-7 h-7 text-gray-500" />
+            )
+          }
         </Link>
+
         <Link
           href="/explore"
           className="flex items-center justify-center w-1/4 py-3"
         >
-          {({ isActive }) => (
-            <SearchIcon
-              className={`p-px w-7 h-7 ${
-                isActive ? "text-blue-500" : "text-gray-500"
-              }`}
-            />
-          )}
+          {({ isActive }) =>
+            isActive ? (
+              <SearchIcon className="p-px w-7 h-7 text-blue-500" />
+            ) : (
+              <SearchIconEmpty className="p-px w-7 h-7 text-gray-500" />
+            )
+          }
         </Link>
+
         <Link
           href="/notifications"
           className="flex items-center justify-center w-1/4 py-3"
         >
-          {({ isActive }) => (
-            <BellIcon
-              className={`p-px w-7 h-7 ${
-                isActive ? "text-blue-500" : "text-gray-500"
-              }`}
-            />
-          )}
+          {({ isActive }) =>
+            isActive ? (
+              <BellIcon className="p-px w-7 h-7 text-blue-500" />
+            ) : (
+              <BellIconEmpty className="p-px w-7 h-7 text-gray-500" />
+            )
+          }
         </Link>
+
         <Link
           href="/messages"
           className="flex items-center justify-center w-1/4 py-3"
         >
-          {({ isActive }) => (
-            <MailboxIcon
-              className={`p-px w-7 h-7 ${
-                isActive ? "text-blue-500" : "text-gray-500"
-              }`}
-            />
-          )}
+          {({ isActive }) =>
+            isActive ? (
+              <MailboxIcon className="p-px w-7 h-7 text-blue-500" />
+            ) : (
+              <MailboxIconEmpty className="p-px w-7 h-7 text-gray-500" />
+            )
+          }
         </Link>
       </footer>
     </div>
